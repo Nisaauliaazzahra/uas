@@ -1,0 +1,274 @@
+:root{
+  --pink: #e84393;
+  --green: #2e7d32;
+  --light-green: #e8f5e9;
+  --light-pink: #fce4ec;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: none;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  padding-top: 90px; 
+}
+
+
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(90deg, var(--light-green), var(--light-pink));
+  padding: 2rem 9%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  box-shadow: 0 .4rem 1rem rgba(0,0,0,.08);
+}
+
+.header .logo{
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: var(--green);
+}
+
+.header .navbar{
+  display: flex;
+  gap: 2.5rem;
+  color: var(--green);
+}
+
+.header .navbar a{
+  font-size: 1.4rem;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+}
+
+.header .navbar a:hover{
+  color: var(--pink);
+}
+.header .navbar a::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background: var(--pink);
+  transition: .3s;
+}
+
+.header .navbar a:hover::after{
+  width: 100%;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 100px;
+  min-height: 90vh;
+  box-sizing: border-box;
+}
+
+section{
+  scroll-margin-top: 120px;
+}
+
+.hero-text p {
+  font-size: 18px;
+  margin-bottom: 25px;
+  color: #555;
+}
+
+.hero-content {
+  width: 50%;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  color: var(--green);
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+
+.hero-image {
+  width: 45%;
+  text-align: right;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 400px;
+}
+
+.btn:hover {
+  background-color: #c13b78;
+}
+.section{
+  padding: 8rem 9%;
+  text-align: center;
+}
+
+.section h2{
+  font-size: 3rem;
+  color: var(--green);
+  margin-bottom: 2rem;
+}
+
+.section p{
+  max-width: 800px;
+  margin: auto;
+  font-size: 1.4rem;
+  line-height: 1.8;
+  color: #555;
+}
+.cards{
+  margin-top: 4rem;
+  display: flex;
+  gap: 2.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card{
+  background: #fff;
+  padding: 2.5rem 2rem;
+  width: 260px;
+  border-radius: 2rem;
+  box-shadow: 0 .8rem 2rem rgba(0,0,0,.08);
+  transition: .3s;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover{
+  transform: translateY(-8px);
+}
+
+.profil{
+  background: #fff;
+}
+
+.layanan{
+  background: var(--light-green);
+}
+
+.koleksi{
+  background: var(--light-pink);
+}
+
+.informasi{
+  background: #fff;
+}
+
+.buku{
+  text-align: center;
+}
+
+.buku img{
+  width: 120px;
+  height: 180px;
+  object-fit: cover;
+  margin: 0 auto 1.5rem;
+  border-radius: 1rem;
+}
+
+.buku .sinopsis{
+  font-size: 1.2rem;
+  color: #666;
+  line-height: 1.6;
+  margin-top: 1rem;
+}
+
+.icon-layanan{
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 1rem;
+}
+
+.cards {
+  display: flex;
+  gap: 2.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.card {
+  background: #fff;
+  padding: 3rem 2rem;
+  width: 230px;
+  border-radius: 2rem;
+  box-shadow: 0 .8rem 2rem rgba(0,0,0,.08);
+  transition: .3s;
+  text-align: center;
+}
+.card:hover {
+  transform: translateY(-8px);
+}
+
+
+
+#Informasi {
+  text-align: center;
+}
+
+.Informasi {
+  background-color: #fdf6fb;
+  padding: 2rem 5%;
+  border-radius: 12px;
+  max-width: 600px;
+  margin: 2rem auto;
+  box-shadow: 0 4px 10px rgba(217, 74, 140, 0.2);
+  text-align: center;
+}
+
+.Informasi h2 {
+  color: #d94a8c;
+  margin-bottom: 1rem;
+}
+
+.Informasi p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.jam-layanan {
+  list-style: none;
+  padding: 0;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.jam-layanan li {
+  margin: 0.5rem 0;
+}
+
+
+.hero {
+  background: radial-gradient(
+    circle at top left,
+    rgba(255, 182, 193, 0.25),
+    transparent 60%
+  ),
+  radial-gradient(
+    circle at bottom right,
+    rgba(186, 230, 255, 0.25),
+    transparent 60%
+  );
+}
